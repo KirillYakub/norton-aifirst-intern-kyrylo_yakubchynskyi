@@ -245,11 +245,8 @@ This project taught me that AI-assisted engineering works best when the develope
 When you work with AI as with Junior Developer and write him structured documentation, it significantly improves AI output quality. 
 I created a dedicated spec.md file that acted as the single source of truth for the project and guided AI to advance code generation and bug fixing.
 
-Of couse in real work you will not have such description as for this internship project, however if you have good Figma design or/and understand project requirements
-creation of quality feature is only a question of time with necessary .md files and steb by step prompts writing.
-
-Also it is important to know how to write this all manually, understand how Android works under the hood, know the Coroutines, Flows, etc. But if you are the developer who
-knows Android deeply and can master an AI tools with time you will become irreplaceable for companies.
+In real work you will not have such a detailed description as for this internship project, but if you have good Figma designs or understand the project requirements, creation of a quality feature is only a question of time with necessary .md files and step-by-step prompts.
+It is also important to know how to write this manually, understand how Android works under the hood, know Coroutines, Flows, etc. But if you are a developer who knows Android deeply and can master AI tools, with time you will become irreplaceable for companies.
 
 # Demo Video:
 
