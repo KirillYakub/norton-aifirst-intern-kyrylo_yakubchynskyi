@@ -469,19 +469,19 @@ And launch app on your device.
 # Screenshots
 
 ### Home Screen
-![Home Screen](docs/screens/home_screenshot.png)
+<img src="docs/screens/home_screenshot.png" width="300"/>
 
 ### Smart Scan
-![Smart Scan](docs/screens/scan_process_screenshot.png)
+<img src="docs/screens/scan_process_screenshot.png" width="300"/>
 
 ### Scan Fail
-![Smart Scan](docs/screens/scan_failed_screenshot.png)
+<img src="docs/screens/scan_failed_screenshot.png" width="300"/>
 
 ### Scan Results
-![Results](docs/screens/scan_result_screenshot.png)
+<img src="docs/screens/scan_result_screenshot.png" width="300"/>
 
 ### Back Dialog
-![Smart Scan](docs/screens/go_back_dialog_screenshot.png)
+<img src="docs/screens/go_back_dialog_screenshot.png" width="300"/>
 
 # Demo Video
 
