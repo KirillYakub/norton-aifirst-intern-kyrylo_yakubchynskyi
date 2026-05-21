@@ -36,6 +36,10 @@ The project contains 6 unit tests covering:
 * Back button behavior
 * Scan cancellation
 
+# Setup Instruction
+* Download .apk release file directly from Github on your Android Device
+* Or use next command in your git/terminal: git clone "https://github.com/KirillYakub/norton-aifirst-intern-kyrylo_yakubchynskyi.git" - fully download Android Studio project
+
 # Architecture
 The project uses a clean single-module architecture organized by feature.
 
@@ -250,7 +254,7 @@ It is also important to know how to write this manually, understand how Android 
 
 # Demo Video:
 
-The demo video includes:
+Link: https://drive.google.com/file/d/1jvt4ZNMjvZEmmEE-1yxtospeX01zhSIh/view?usp=sharing
 
 # App Screenshots:
 
