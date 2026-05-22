@@ -67,9 +67,9 @@ Before starting to work with Claude Code directly I used a combination with Chat
 
 ```text
 You are a Senior Android Engineer at Norton (Gen).
-I'm building the Security Health Dashboard prototype.
+I am building the Security Health Dashboard prototype.
 The complete product layout, behaviors, colors, and requirements are written in docs/spec.md. Read the entire file first.
-Let's begin with Phase 1 - Architecture and Domain Models.
+Lets begin with Phase 1 - Architecture and Domain Models.
 
 Please provide:
 1. A clean single-module package structure
