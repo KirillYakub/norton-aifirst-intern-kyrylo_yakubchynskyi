@@ -67,19 +67,14 @@ Before starting to work with Claude Code directly I used a combination with Chat
 
 ```text
 You are a Senior Android Engineer at Norton (Gen).
-
 I'm building the Security Health Dashboard prototype.
-
 The complete product layout, behaviors, colors, and requirements are written in docs/spec.md. Read the entire file first.
-
-Let's begin with Phase 1 – Architecture & Domain Models.
+Let's begin with Phase 1 - Architecture and Domain Models.
 
 Please provide:
 1. A clean single-module package structure
 2. Plain Kotlin domain models
 3. A single immutable UI State class
-
-Keep everything simple and clean.
 ```
 
 ### Result
@@ -100,9 +95,7 @@ However before I made a mistake with project package naming, so lets fix it:
 ## Prompt 2 — Package Cleanup and Refactor
 
 ```text
-Change the package name to:
-applicationId = "com.norton.securitydashboard"
-
+Change the package name to: applicationId = "com.norton.securitydashboard"
 Delete the old package structure.
 Move MainActivity and theme files into the new package.
 Fix all imports and package declarations.
@@ -123,12 +116,12 @@ After that we needed to create repository abstraction and mock scan simulation.
 ## Prompt 3 — Repository Layer
 
 ```text
-Proceed to Phase 2 — Repository Layer
+Proceed to Phase 2 - Repository Layer
 
 Create:                                                                                                                                                               
-1. `ScanRepository` interface in `domain/repository/`                                                                                                                 
-2. `ScanRepositoryImpl` in `data/`                                                                                                                                    
-                                                                                                                                                                        
+1. ScanRepository interface in domain/repository/                                                                                                                 
+2. ScanRepositoryImpl in data/ package                                                                                                                                   
+
 Use Koin for DI. Simulate a realistic 3–5 second scan using Kotlin Flow with sequential category updates and occasional errors.  
 ```
 
@@ -144,14 +137,9 @@ Now we could generate screens, ViewModels, reusable components, and state handli
 ## Prompt 4 — UI & ViewModels
 
 ```text
-Phase 1 and Phase 2 are complete.                                                                                                                                                                                             
-Now proceed to Phase 3 exactly as you planned in your structure diagram.                                                                                          
-                                                                                                                                                                        
-Create everything you marked for Phase 3, including `ScanViewModel.kt` (this is important), and any other files you planned for this phase (HomeScreen, ScanScreen,    
-components, etc.)                                                                                                                                                     
-                                                                                                                                                                        
-Use Koin to inject the repository where needed.                                                                                                                       
-Follow your own plan and the rules in `docs/spec.md`.                                                                                                                   
+Now create everything you marked for Phase 3, including ScanViewModel.kt, and any other files you planned for this phase (HomeScreen, ScanScreen, components, etc.)                                                           
+Use Koin to inject the repository.                                                                                                                       
+Follow your own plan and the rules in docs/spec.md.                                                                                                                   
 ```
 
 ### Result
@@ -177,14 +165,12 @@ Also Claude made next mistakes:
 ## Prompt 5 — Fix DI duplication
 
 ```text
-The app is mostly complete, but we have duplicate DI modules.                                                                                                         
+We have duplicated DI modules.                                                                                                         
                                                                                                                                                                         
-Please clean up the DI structure:                                                                                                                                     
-- Keep only **one** clean Koin module
+Clean up the DI structure:                                                                                                                                     
+- Keep only one clean Koin module
 - Delete the redundant DI module/folder                                                                                                                               
-- Make sure `ScanRepositoryImpl` is still correctly injected with Koin                                                                                                
-                                                                                                                                                                        
-Do the cleanup now and confirm when it's done.  
+- Make sure ScanRepositoryImpl is still correctly injected with Koin                                                                                                
 ```
 
 ### Result
@@ -196,12 +182,9 @@ Claude generated:
 Now I generated tests:
 ## Prompt 6 — Testing
 
-```text
-The app is almost complete.                                                                                                                                           
-                                                                                                                                                                        
+```text                                                                                                                                     
 Now create at least 3 unit tests as required in the assignment.                                                                                        
-                                                                                                                                                                        
-Cover ViewModel and data model logic (state transitions, score calculation, cancellation behavior are good examples).                                                                                                        Let me know when the tests are ready.     
+Cover ViewModel and data model logic (state transitions, score calculation, cancellation behavior are good examples).
 ```
 
 ### Result
